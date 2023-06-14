@@ -63,8 +63,8 @@ WORKDIR /modules
 
 COPY /home/bugs/workspace/ReactVision/rv_utils/Communication ./modules 
 
-RUN chmod +x entrypoint.sh 
-COPY entrypoint.sh .
-RUN chmod +x entrypoint.sh 
+RUN chmod +x startup.sh 
+COPY startup.sh .
+RUN chmod +x startup.sh 
 
-ENTRYPOINT [ "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/app/startup.sh" ]
