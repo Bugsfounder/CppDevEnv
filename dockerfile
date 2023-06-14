@@ -57,14 +57,14 @@ RUN cd /home/react-vision/packages \
     && make -j  \
     && make install
 
-RUN apk add --no-cache bash
+# RUN apk add --no-cache bash
 
-WORKDIR /modules
+# WORKDIR /modules
 
-COPY /home/bugs/workspace/ReactVision/rv_utils/Communication ./modules 
+# COPY /home/bugs/workspace/ReactVision/rv_utils/Communication ./modules 
 
-RUN chmod +x startup.sh 
-COPY startup.sh .
-RUN chmod +x startup.sh 
+# RUN chmod +x startup.sh 
+# COPY startup.sh .
+# RUN chmod +x startup.sh 
 
-ENTRYPOINT [ "/app/startup.sh" ]
+# ENTRYPOINT [ "/app/startup.sh" ]
