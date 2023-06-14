@@ -12,5 +12,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username bugsfounder --password ${{ secrets.RV_SEC }} ghcr.io
-          docker build . --tag ghcr.io/bugsfounder/hello-worldd-ghcr:latest
-          docker push ghcr.io/bugsfounder/hello-worldd-ghcr:latest
+          docker build . --tag ghcr.io/bugsfounder/cppDevEnv:latest
+          docker push ghcr.io/bugsfounder/cppDevEnv:latest
