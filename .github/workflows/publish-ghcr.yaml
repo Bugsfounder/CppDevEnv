@@ -1,4 +1,4 @@
-# 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
+#  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
 name: Docker Image CI for GHCR
 
 on:
@@ -12,5 +12,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username bugsfounder --password ${{ secrets.RV_SEC }} ghcr.io
-          docker build . --tag ghcr.io/bugsfounder/cppDevEnv:latest
-          docker push ghcr.io/bugsfounder/cppDevEnv:latest
+          docker build . --tag ghcr.io/bugsfounder/cpp-dev-env:latest
+          docker push ghcr.io/bugsfounder/cpp-dev-env:latest
