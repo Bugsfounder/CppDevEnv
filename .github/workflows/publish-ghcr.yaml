@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and push the image
         run: |
-          docker login --username bugsfounder --password ${{ secrets.RV_SEC }} ghcr.io
+          docker login --username bugsfounder --password-stdin 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 ghcr.io
           docker build . --tag ghcr.io/bugsfounder/cpp-dev-env:latest
           docker push ghcr.io/bugsfounder/cpp-dev-env:latest
